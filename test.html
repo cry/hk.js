@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hk.js test page</title>
+</head>
+<body>
+
+    <input type="text" name="eval" id="eval" placeholder="eval" value="hk.addWordListener('memes')"> <button onclick="meme()">eval</button>
+
+    <hr>
+
+    <pre id="log"></pre>
+
+    <script>
+        const HK_LOG_TO_PAGE = 1;
+
+        meme = _ => {
+            console.log(document.getElementById("eval").value);
+            eval(document.getElementById("eval").value)
+        }
+
+    </script>
+
+    <script src="hk.js"></script>
+    
+</body>
+</html>
